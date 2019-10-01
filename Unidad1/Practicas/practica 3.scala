@@ -1,4 +1,4 @@
-//1ra forma
+//1 forma
 
 def fib1( n : Int) : Int = n match {
 case 0 | 1 => n
@@ -10,7 +10,7 @@ fibs take 10 toList
 res42: List[Int] = List(0, 1, 1, 2, 3, 5, 8, 13, 21, 34)
 
 
-//2da Forma
+// Forma
 
 def fib2( n : Int ) : Int = {
 var a = 0
@@ -25,7 +25,7 @@ i = i + 1
 return a
 }
 
-// 3ra Forma
+// 3 Forma
 
 def fib3( n : Int) : Int = { 
 def fib_tail( n: Int, a:Int, b:Int): Int = n match {
@@ -35,7 +35,7 @@ case _ => fib_tail( n-1, b, a+b )
 return fib_tail( n, 0, 1)
 }
 
-// 4ta forma
+// 4 forma
 def fib4( n : Int) : Int = { 
 def fib_tail( n: Int, a:Int, b:Int): Int = n match {
 case 0 => a 
@@ -44,7 +44,7 @@ case _ => fib_tail( n-1, b, (a+b)%1000000 )
 return fib_tail( n, 0, 1)
 }
 
-//5ta forma
+//5 forma
 
 def fib5( n : Int) : Int = { 
 def fib_tail( n: Int, a:Int, b:Int): Int = n match {
