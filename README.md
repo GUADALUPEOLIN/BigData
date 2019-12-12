@@ -1,4 +1,4 @@
-en la uniada 2 se vieron temas de basic statistec
+En la uniada 2 se vieron temas de basic statistec
 
 El teorema de Bayes es utilizado para calcular la probabilidad de un suceso, teniendo información de antemano sobre ese suceso.
 
