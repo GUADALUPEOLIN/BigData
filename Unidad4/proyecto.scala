@@ -1,11 +1,9 @@
-//Contenido del proyecto
-//    Objectivo: Comparacion del rendimiento siguientes algoritmos de machine learning
 
 // Limpieza de datos
 //Importación para la creacion de una sesion spark
-import org.apache.spark.sql.SparkSession
 //Lo siguiente se aplica para evitar errores ya que nos va marcando cada uno
 // y los va categorizando.
+import org.apache.spark.sql.SparkSession
 import org.apache.log4j._
 Logger.getLogger("org").setLevel(Level.ERROR)
 //importación de las librerías a utilizar
@@ -93,7 +91,7 @@ println(metricsLog_Re.confusionMatrix)
 println("Exactitud")
 println(metricsLog_Re.accuracy)
 
-//SVM ~~~~~~~~     
+//SVM     
 
 import org.apache.spark.ml.classification.LinearSVC
 
